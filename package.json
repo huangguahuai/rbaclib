@@ -1,6 +1,6 @@
 {
-  "name": "rbac-js",
-  "version": "1.0.0",
+  "name": "rbaclib-js",
+  "version": "1.0.1",
   "description": "rabclib windown x64",
   "main": "index.js",
   "directories": {

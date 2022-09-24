@@ -1,16 +1,19 @@
 import common from './lib'
 
-let install = (app, option) => {
-    const version = Number((app.version || '0').split('.')[0])
-    if (version >= 3) {
-        app.config.globalProperties.$gyCom = common;
-    } else {
-        app.prototype.$gyCom = common;
-    }
-}
-export { install };
-export { common }
+const init = common.init
+const exports = common.export
+const add = common.add
+const remove = common.remove
+const isMatch = common.isMatch
+export { init };
+export { exports }
+export { add }
+export { remove }
+export { isMatch }
 export default {
-    install,
-    common,
+    exports,
+    init,
+    add,
+    remove,
+    isMatch
 }; 
